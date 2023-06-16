@@ -44,17 +44,9 @@ div.title {
   padding: 10px 0px;
 }
 
-/* .back-ground {
-  background-color: black;
-  text-align: left;
-  padding: 20px 0px;
-} */
-
 .active {
-  /* color: aliceblue; */
   padding: 17px 20px;
   text-decoration: none;
-  color: #fff;
 }
 
 .active:hover {
@@ -63,9 +55,10 @@ div.title {
 
 .column {
   float: left;
-  width: 30%;
+  width: 35%;
   margin: 20px;
   background-size: contain;
+ 
 }
 
 .card img {
@@ -74,12 +67,13 @@ div.title {
   object-fit: cover;
   display: inline-block;
   text-align: center;
-
 }
 
 .card {
   background-color: rgb(235, 235, 235);
-  width: 250px;
+  width: 280px;
+  height: 100%;
+  
 }
 
 button {
@@ -88,10 +82,7 @@ button {
   background-color: rgb(58, 51, 51);
   color: white;
 }
-#openPopUp {
-    color: white;
-    text-decoration: none;
-}
+
 #copyright {
   text-align: center;
   padding: 10px;
@@ -100,22 +91,24 @@ button {
 }
 
 .container {
+  width: auto;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  width: auto;
-  height: auto;
+  float: left;
+  margin:5px;
 }
 
 #footer {
   position: absolute;
-  bottom: 120px;
+  bottom: -800px;
   background-color: rgb(167, 167, 3);
   width: 100%;
   color: white;
-  margin-bottom: -1000px;
 }
 
+/* -------Popup-------- */
 .overlay {
   position: fixed;
   top: 0;
@@ -177,75 +170,51 @@ button {
   color: white;
 }
 
-ul {
-  list-style-type: none;
-  margin: 1px;
-  padding: 1px;
+/* ---------Navigation------- */
+.menu{
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .brand-logo{
+  left: 1rem;
+}
+/* --------Detail---------- */
+
+.badge{
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: auto;
+  top: 150px;
+}
+.background-name-image{
+  background-color: rgb(222, 212, 212);
+}
+.background-info-cost{
+  background-color: rgb(223, 223, 223);
 }
 
-li {
-  display: inline-block;
-  margin-right: 20px;
-  position: relative;
-}
-
-.switch-mode {
-  display: inline-block;
-}
-
-.box {
-  background-color: #333;
-  height: 60px;
-
-}
-
-nav {
-  height: 30px;
+.container #club{
   text-align: left;
-  padding: 20px 0px;
+  font-size: large;
+  font-weight: bold;
 }
-.container .detail .row .image_player {
-  /* height: 50rem; */
-  height: 100%;
-  display: block;
-  padding: 0 26rem;
-  background-color: rgb(237, 237, 237);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-}
-.container .detail .row .image_player img {
-  width: 100%;
-}
-
-.container .detail .row .info_player {
-  background-color: rgb(255, 255, 255);
+.product-price{
   text-align: left;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+  color: blue;
 }
-
-.container .column .card {
-  padding: 10px;
-}
-
-.container .column .card h3 {
-  margin: 5px;
-  color: rgb(214, 112, 3);
-}
-
-.container .detail .row .info_player .info_player_2 h5 {
-  margin: 5px;
+.container p #abc{
+  text-align: justify;
   color: gray;
-}
-
-.container {
-  margin: 5px;
-}
-
-.container .detail {
-  margin:20px;
 }
 .product-card{
   margin-left: 100px;
-  background-color: grey;
+  background-color: orange;
   margin-top: 50px;
   margin-left: 150px;
   width: 250%;
@@ -255,8 +224,8 @@ nav {
   width: 80%;
   height: 200%;
 }
-.badge {
-  color: white;
-  text-align: left;
-  background-color: orange;
+.container .column .card h3 {
+  margin: 5px;
+  color: rgb(214, 112, 3);
+  font-size: 25px;
 }
