@@ -229,3 +229,21 @@ button {
   color: rgb(214, 112, 3);
   font-size: 25px;
 }
+form {
+  margin-top: 150px;
+  margin-left: -240px;
+  margin-right: -300px;
+}
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.product-details{
+  background-color: aliceblue;
+}
